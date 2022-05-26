@@ -10,7 +10,7 @@ function Wypozyczenia() {
     const [okres_wypozyczenia, setOkres_wypozyczenia] = useState('')
 
     const submitWypozyczenia = () => {
-      Axios.post("http://localhost:8002/api/insert", {
+      Axios.post("http://localhost:8002/api/insert1", {
         cena: cena, 
         data_wypozyczenia: data_wypozyczenia,
         data_zwrotu: data_zwrotu, 

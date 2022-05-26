@@ -29,6 +29,16 @@ app.get("/api/get", (req, res) => {
     });
 });
 
+app.get("/api/get1", (req, res) => {
+
+    const sqlSelect1 = 
+    "SELECT * FROM wypozyczenia";
+    db.query(sqlSelect1, (err, result) => {
+        res.send(result);
+    });
+});
+
+
 app.post("/api/insert", (req, res) => {
 
     const imie = req.body.imie
@@ -43,6 +53,20 @@ app.post("/api/insert", (req, res) => {
         console.log(result);
     });
     });
+
+    app.post("/api/insert1", (req, res) => {
+
+        const cena = req.body.cena
+        const data_wypozyczenia = req.body.data_wypozyczenia
+        const data_zwrotu = req.body.data_zwrotu
+        const okres_wypozyczenia = req.body.okres_wypozyczenia
+    
+        const sqlInsert1 = 
+        "INSERT INTO wypozyczenia (cena, data_wypozyczenia, data_zwrotu, okres_wypozyczenia) VALUES (?,?,?,?)";
+        db.query(sqlInsert1, [cena, data_wypozyczenia, data_zwrotu, okres_wypozyczenia], (err, result) => {
+            console.log(result);
+        });
+        });
 
 app.listen(8002, () => {
     console.log("Serwer działa na http://localhost:8002/");  
