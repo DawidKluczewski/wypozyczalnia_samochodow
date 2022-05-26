@@ -1,5 +1,14 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap%27');
+
+.klient {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+
+}
+body{
+ background-color: rgb(219, 219, 219); 
+
+
 }
 
 .form{
@@ -8,10 +17,84 @@
   align-items: center;
   justify-content: center;
   }
-  
+
   .form input {
-  width: 300px;
-  height: 60px;
+  width: 200px;
+  height: 35px;
   margin: 10px;
   font-size: 20px;
+  }
+
+  h1{
+    color: black;
+
+
+  }
+  h2{
+    font-size: 30px;
+    color: BLACK;
+  }
+  .pesel{
+    border: 1px solid black; border-radius: 5px;
+
+  }
+  .imie{
+    border: 1px solid black; border-radius: 5px;
+  }
+  .nazwisko{
+    border: 1px solid black; border-radius: 5px;
+  }
+  .miejsce_zamieszkania{
+    border: 1px solid black; border-radius: 5px;
+  }
+  .numer_telefonu{
+    border: 1px solid black; border-radius: 5px;
+  }
+  button{
+    font-size: 23px;
+    border: 1px solid black; border-radius: 5px;
+  }
+  .numer{
+    font-size: 20px;
+  }
+  .imion{
+    font-size: 20px;
+  }
+  .nazwisken{
+    font-size: 20px;
+  }
+  .peselito{
+    font-size: 20px;
+  }
+  .miejsce{
+    font-size: 20px;
+  }
+  .logo{
+    position: absolute;
+    display: flex;
+    float: left;
+    height: 100px ;
+    padding: 10px;
+  }
+  .tekst {
+    text-align: center;
+    padding-top: 10px; 
+    background-color: rgb(0, 0, 75);
+    border-bottom: 2px solid black;
+    height: 100px;
+  }
+
+  .srodek {
+    text-align: center;
+
+
+  }
+  .tekst2 {
+
+  }
+
+  button {
+    font-size: 20px;
+    width: 90px;
+    height: 30px;
   }
