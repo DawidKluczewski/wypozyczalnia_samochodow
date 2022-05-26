@@ -8,6 +8,8 @@
 body{
  background-color: rgb(219, 219, 219); 
  background-image: url(https://cdn.discordapp.com/attachments/896034500625174528/979469211162279936/Bez_nazwy-1.png);
+  background-size: auto;
+  background-attachment: fixed;
  color: white;
 
 
@@ -34,7 +36,8 @@ body{
   }
   h2{
     font-size: 30px;
-    color: BLACK;
+    color: white;
+    text-shadow: 2px 2px 2px black;
   }
   .pesel{
     border: 1px solid black; border-radius: 5px;
@@ -92,9 +95,17 @@ body{
   }
 
   button {
-    font-size: 20px;
-    width: 90px;
-    height: 30px;
+    background-color: #0f1638;
+    border: 1px solid black ;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
   }
 
   

@@ -17,43 +17,53 @@ function Samochody() {
 
   <div className='Audi'>
     <img src={Audi} alt="this is car image" />
+    <p>Audi RS7</p>
   </div>
   
   <div className="BMWX7">
             <img src={BMWX7} alt="this is car image" />
+            <p>BMW X7 2021</p>
           </div>
 
 
           <div className="bmwi8">
             <img src={bmwi8} alt="this is car image" />
+            <p>BMW i8 coupe 2019</p>
           </div>
 
           <div className="ferrariF88">
             <img src={ferrariF88} alt="this is car image" />
+            <p>FerrariF88</p>
           </div>
 
           <div className='Lambo'>
             <img src={Lambo} alt="this is car image" />
+            <p>Lamborghini Huracan EVO 2020</p>
           </div>
 
           <div className='Mclaren'>
             <img src={Mclaren} alt="this is car image" />
+            <p>McLaren P1 2018</p>
           </div>
 
           <div className='mercedesG500'>
             <img src={mercedesG500} alt="this is car image" />
+            <p>Mercedes G500 2019</p>
           </div>
 
           <div className='nissanGTR'>
             <img src={nissanGTR} alt="this is car image" />
+            <p>Nissan GTR 2020</p>
           </div>
 
           <div className='rrwraith'>
             <img src={rrwraith} alt="this is car image" />
+            <p>Rolls-Royce Wraith 2022</p>
           </div>
 
           <div className='Porshe'>
             <img src={Porche} alt="this is car image" />
+            <p>Porsche Taycan 2020</p>
           </div>
 
 

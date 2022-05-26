@@ -81,7 +81,7 @@ function Klient() {
     
     
     
-          <button onClick={submitKlient}>Wyślij</button>
+          <button onClick={submitKlient}>WYŚLIJ</button>
     
           </div>
         </div>
