@@ -3,10 +3,14 @@
     font-family: sans-serif;
 }
 
-.klient, .samochody, .wypozyczenia {
-    padding: 15px;
+.klient2, .samochody2, .wypozyczenia2 {
+    padding: 20px;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-  
+    transition: all 0.3s;
+}
+
+.klient2:hover, .samochody2:hover, .wypozyczenia2:hover {
+    color: rgb(255, 0, 0);
 }

@@ -8,9 +8,9 @@ function App() {
  return (
     <div className="App">
      <Router>
-          <Link to='/Klient' className='klient'>Klient</Link>
-          <Link to='/Samochody' className='samochody'>Samochody</Link>
-          <Link to='/Wypozyczenia' className='wypozyczenia'>Wypożyczenia</Link>
+          <Link to='/Klient' className='klient2'>Klient</Link>
+          <Link to='/Samochody' className='samochody2'>Samochody</Link>
+          <Link to='/Wypozyczenia' className='wypozyczenia2'>Wypożyczenia</Link>
           <Routes>
             <Route path='/'/>
             <Route path='/Klient'  element={<Klient />}/>
