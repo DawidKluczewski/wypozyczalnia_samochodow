@@ -13,7 +13,7 @@ function Wypozyczenia() {
 
     const submitWypozyczenia = () => {
       Axios.post("http://localhost:8002/api/insert1", {
-        cena: cena, 
+        cena : document.getElementById('cena_w').value * mnoznik.value, 
         data_wypozyczenia: data_wypozyczenia,
         data_zwrotu: data_zwrotu, 
         okres_wypozyczenia: okres_wypozyczenia,
@@ -47,7 +47,7 @@ function Wypozyczenia() {
         <form onSubmit={handleSubmit} className="form">
 
           <label className='imion'>Cena za dzień:</label>
-          <input type="number" className='imie' name="cena" value = "1000" onChange={(e)=> {
+          <input type="number" className='imie' name="cena" value = "1000" id="cena_w" onChange={(e)=> {
     setCena(e.target.value)
     
     }}/>

@@ -77,7 +77,7 @@ function Klient() {
     
     
           <label className='numer'>Numer telefonu:</label>
-          <input type="text" className='numer_telefonu' name="numer_telefonu" onChange={(e)=> {
+          <input type="tel" className='numer_telefonu' name="numer_telefonu" onChange={(e)=> {
     setNumer_telefonu(e.target.value)
     }}/>
     

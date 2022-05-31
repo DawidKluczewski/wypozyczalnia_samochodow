@@ -104,11 +104,16 @@ body{
     text-align: center;
     display: block;
     margin: auto;
+    cursor: pointer;
+    transition: background-color 0.2s;
   }
   .button1 {
     margin: 10px 0px 20px 0px;
   }
 
+  button:hover {
+    background-color: rgba(77, 100, 255, 0.667);
+  }
 
 
 
