@@ -3,6 +3,7 @@ import './App.css';
 import Axios from "axios";
 import logo from "../src/logo6969.png";
 
+
 function Klient() {
     const [imie, setImie] = useState('')
     const [nazwisko, setNazwisko] = useState('')

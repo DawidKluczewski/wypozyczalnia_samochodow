@@ -51,7 +51,7 @@ function Wypozyczenia() {
     }}/>
     
           <label className='peselito'>Data zwrotu:</label>
-          <input type="number" className='pesel' name="data_zwrotu" onChange={(e)=> {
+          <input type="text" className='pesel' name="data_zwrotu" onChange={(e)=> {
     setData_zwrotu(e.target.value)
     }}/>
     
@@ -59,8 +59,9 @@ function Wypozyczenia() {
           <input type="text" className='miejsce_zamieszkania' name="okres_wypozyczenia"  onChange={(e)=> {
     setOkres_wypozyczenia(e.target.value)
     }}/>
+ <button onClick={submitWypozyczenia}>Wyślij</button>
     
-          <button onClick={submitWypozyczenia}>Wyślij</button>
+          
     
           </div>
         </div>
