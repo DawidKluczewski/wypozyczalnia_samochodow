@@ -83,8 +83,8 @@ function Klient() {
     
     
     
-          <button onClick={submitKlient}>WYŚLIJ</button>
-          <button onClick={()=>{navigate('/Samochody')}}>Dalej</button>
+          <button className='button1' onClick={submitKlient}>WYŚLIJ</button>
+          <button className='button2' onClick={()=>{navigate('/Samochody')}}>Dalej</button>
     
           </div>
           

@@ -8,6 +8,8 @@ function Wypozyczenia() {
     const [data_wypozyczenia, setData_wypozyczenia] = useState('')
     const [data_zwrotu, setData_zwrotu] = useState('')
     const [okres_wypozyczenia, setOkres_wypozyczenia] = useState('')
+    const [text, setText] = useState('')
+    const mnoznik = document.getElementById('okres_wypozyczenia')
 
     const submitWypozyczenia = () => {
       Axios.post("http://localhost:8002/api/insert1", {
@@ -18,6 +20,11 @@ function Wypozyczenia() {
     }).then(() => {
       alert("Udało się");
       });
+    };
+
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      setText(event.target[0].value * mnoznik.value);
     };
 
     return (
@@ -37,34 +44,39 @@ function Wypozyczenia() {
     
         </div>
     
-          <div className='form'>
+        <form onSubmit={handleSubmit} className="form">
 
-          <label className='imion'>Cena:</label>
-          <input type="text" className='imie' name="cena" onChange={(e)=> {
+          <label className='imion'>Cena za dzień:</label>
+          <input type="number" className='imie' name="cena" value = "1000" onChange={(e)=> {
     setCena(e.target.value)
     
     }}/>
   
           <label className='nazwisken'>Data wypożyczenia:</label>
-          <input type="text" className="nazwisko" name="data_wypozyczenia" onChange={(e)=> {
+          <input type="date" className="nazwisko" name="data_wypozyczenia" onChange={(e)=> {
     setData_wypozyczenia(e.target.value)
     }}/>
     
           <label className='peselito'>Data zwrotu:</label>
-          <input type="text" className='pesel' name="data_zwrotu" onChange={(e)=> {
+          <input type="date" className='pesel' name="data_zwrotu" onChange={(e)=> {
     setData_zwrotu(e.target.value)
     }}/>
     
           <label className='miejsce'>Okres wypożyczenia:</label>
-          <input type="text" className='miejsce_zamieszkania' name="okres_wypozyczenia"  onChange={(e)=> {
+          <input type="text" className='miejsce_zamieszkania' name="okres_wypozyczenia" id="okres_wypozyczenia" onChange={(e)=> {
     setOkres_wypozyczenia(e.target.value)
     }}/>
- <button onClick={submitWypozyczenia}>Wyślij</button>
+
+      <button>Pokaż ostateczną cenę:</button>
+
+    <h3>{text}</h3>
+
+    <button onClick={submitWypozyczenia}>Wypożycz swój samochód</button>
+
     
-          
-    
-          </div>
-        </div>
+    </form>
+    </div>
+        
     
       );
     }

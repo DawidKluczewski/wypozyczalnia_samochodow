@@ -38,7 +38,6 @@ app.get("/api/get1", (req, res) => {
     });
 });
 
-
 app.post("/api/insert", (req, res) => {
 
     const imie = req.body.imie
@@ -67,6 +66,8 @@ app.post("/api/insert", (req, res) => {
             console.log(result);
         });
         });
+
+
 
 app.listen(8002, () => {
     console.log("Serwer działa na http://localhost:8002/");  
