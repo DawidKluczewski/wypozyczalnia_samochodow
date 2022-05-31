@@ -28,53 +28,94 @@ function Samochody() {
   </div>
   
   <div className="BMWX7">
-            <img src={BMWX7} alt="this is car2 image" />
-            <p>BMW X7 2021</p>
-            button
-          </div>
+    <img src={BMWX7} alt="this is car2 image" />
+    <p>BMW X7 2021</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
+  <div className="bmwi8">
+    <img src={bmwi8} alt="this is car3 image" />
+    <p>BMW i8 coupe 2019</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
-          <div className="bmwi8">
-            <img src={bmwi8} alt="this is car3 image" />
-            <p>BMW i8 coupe 2019</p>
-          </div>
+  <div className="ferrariF88">
+    <img src={ferrariF88} alt="this is car4 image" />
+    <p>FerrariF88</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
-          <div className="ferrariF88">
-            <img src={ferrariF88} alt="this is car4 image" />
-            <p>FerrariF88</p>
-          </div>
+  <div className='Lambo'>
+    <img src={Lambo} alt="this is car5 image" />
+    <p>Lamborghini Huracan EVO 2020</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
-          <div className='Lambo'>
-            <img src={Lambo} alt="this is car5 image" />
-            <p>Lamborghini Huracan EVO 2020</p>
-          </div>
+  <div className='Mclaren'>
+    <img src={Mclaren} alt="this is car6 image" />
+    <p>McLaren P1 2018</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
-          <div className='Mclaren'>
-            <img src={Mclaren} alt="this is car6 image" />
-            <p>McLaren P1 2018</p>
-          </div>
+  <div className='mercedesG500'>
+    <img src={mercedesG500} alt="this is car7 image" />
+    <p>Mercedes G500 2019</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
-          <div className='mercedesG500'>
-            <img src={mercedesG500} alt="this is car7 image" />
-            <p>Mercedes G500 2019</p>
-          </div>
+  <div className='nissanGTR'>
+    <img src={nissanGTR} alt="this is car8 image" />
+    <p>Nissan GTR 2020</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
-          <div className='nissanGTR'>
-            <img src={nissanGTR} alt="this is car8 image" />
-            <p>Nissan GTR 2020</p>
-          </div>
+  <div className='rrwraith'>
+    <img src={rrwraith} alt="this is car9 image" />
+    <p>Rolls-Royce Wraith 2022</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
-          <div className='rrwraith'>
-            <img src={rrwraith} alt="this is car9 image" />
-            <p>Rolls-Royce Wraith 2022</p>
-          </div>
-
-          <div className='Porshe'>
-            <img src={Porche} alt="this is car image10" />
-            <p>Porsche Taycan 2020</p>
-          </div>
-         
-
+  <div className='Porshe'>
+    <img src={Porche} alt="this is car image10" />
+    <p>Porsche Taycan 2020</p>
+    <button onClick={() => {
+      navigate('/Wypozyczenia')
+    }} >
+      Wypożycz
+    </button>
+  </div>
 
 </div>
 
