@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Axios from "axios";
 import logo from "../src/logo6969.png";
+import { useNavigate} from "react-router-dom";
 
 
 function Klient() {
@@ -22,7 +23,7 @@ function Klient() {
       alert("Udało się");
       });
     };
-
+    let navigate = useNavigate();
     return (
         <div className="klient">
         <div className='srodek'>
@@ -83,8 +84,10 @@ function Klient() {
     
     
           <button onClick={submitKlient}>WYŚLIJ</button>
+          <button onClick={()=>{navigate('/Samochody')}}>Dalej</button>
     
           </div>
+          
         </div>
     
       );
