@@ -1,7 +1,8 @@
 import React from 'react'
 import logo from "../src/logo6969.png";
-
+import { useNavigate} from "react-router-dom";
 function TabelaWypozyczenia() {
+  let navigate = useNavigate();
   return (
     <div className="klient">
         <div className='srodek'>
@@ -18,7 +19,14 @@ function TabelaWypozyczenia() {
           </div>
     
         </div>
+
+        <button onClick={() => {
+      navigate('/Wypozyczenia2')
+    }} >
+      Wypożycz
+    </button>
     </div>
+
   )
 }
 

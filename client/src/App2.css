@@ -3,7 +3,7 @@
     font-family: sans-serif;
 }
 
-.klient2, .samochody2, .wypozyczenia2 {
+.linki {
     padding: 20px;
     text-decoration: none;
     color: white;
@@ -11,6 +11,6 @@
     transition: all 0.3s;
 }
 
-.klient2:hover, .samochody2:hover, .wypozyczenia2:hover {
+.linki:hover {
     color: rgb(255, 0, 0);
 }
