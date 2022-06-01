@@ -30,6 +30,15 @@ function TabelaKlienci() {
           <div className='tekst2'>
           <h2>Nasi Klienci:</h2>
           </div>
+          <table>
+        <tr>
+            <th>Imie</th> 
+         </tr>
+         <tr>
+            <th>Nazwisko</th>
+         </tr>
+              
+            </table>
     
     <div className='divek'>
         
@@ -37,11 +46,16 @@ function TabelaKlienci() {
         return (
         <div>
         <table>
-            <tr><td>Imie</td></tr>
-            <tr><td>Nazwisko</td></tr>
+        <tr>
+            <td>{val.imie}</td>
+         </tr>
+         <tr>
+             <td>{val.nazwisko}</td>
+         </tr>
               
             </table>
             </div>
+            
         )
     })}
     </div>
