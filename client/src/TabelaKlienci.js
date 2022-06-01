@@ -30,34 +30,22 @@ function TabelaKlienci() {
           <div className='tekst2'>
           <h2>Nasi Klienci:</h2>
           </div>
-          <table>
-        <tr>
-            <th>Imie</th> 
-         </tr>
-         <tr>
-            <th>Nazwisko</th>
-         </tr>
-              
-            </table>
     
     <div className='divek'>
-        
+
+       <table> 
+           <tr><th>Imie</th><th>Nazwisko</th></tr>
     {KlienciList.map((val) => {
         return (
-        <div>
-        <table>
         <tr>
             <td>{val.imie}</td>
-         </tr>
-         <tr>
+         
              <td>{val.nazwisko}</td>
          </tr>
               
-            </table>
-            </div>
-            
         )
     })}
+    </table>
     </div>
         </div>
     </div>

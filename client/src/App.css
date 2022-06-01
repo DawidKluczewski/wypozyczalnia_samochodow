@@ -8,7 +8,7 @@
 body{
  background-color: rgb(219, 219, 219); 
  background-image: url(https://cdn.discordapp.com/attachments/896034500625174528/979469211162279936/Bez_nazwy-1.png);
-  background-size: auto;
+  background-size: 100%;
   background-attachment: fixed;
  color: white;
 
@@ -121,7 +121,12 @@ body{
   align-items: center;
 }
 
-table{ 
+table, th, td{ 
   border: 1px solid white;
+  border-collapse: collapse;
  } 
+
+ .buttonik{
+   margin-top: 20px;
+ }
   
