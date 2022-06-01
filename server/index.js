@@ -20,6 +20,24 @@ app.get("/", (req, res) => {
     res.json("Serwer działa");
 });
 
+app.delete('/api/delete/:cena', (req,res)=>{
+    const cena = req.params.cena
+    const sqlDelte = "DELETE FROM wypozyczenia WHERE cena = ?";
+    db.query(sqlDelte, cena, (err, result) =>{
+        if (err) console.log(err);
+    });
+ })
+ 
+ app.put('/api/update', (req,res)=>{
+     const cena = req.body.cena;
+     const okres_wypozyczenia = req.body.okres_wypozyczenia;
+     const sqlUpdate = 
+     "UPDATE wypozyczenia SET okres_wypozyczenia = ? WHERE cena = ?";
+     db.query(sqlUpdate, [okres_wypozyczenia, cena], (err, result) =>{
+         if (err) console.log(err);
+     });
+  })
+
 app.get("/api/get", (req, res) => {
 
     const sqlSelect = 

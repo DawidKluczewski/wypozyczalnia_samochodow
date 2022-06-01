@@ -5,7 +5,6 @@ import Samochody from './Samochody';
 import Wypozyczenia from './Wypozyczenia';
 import TabelaKlienci from './TabelaKlienci';
 import TabelaWypozyczenia from './TabelaWypozyczenia';
-import Wypozyczenia2 from './Wypozyczenia2';
 import './App2.css';
 function App() {
  return (
@@ -23,7 +22,6 @@ function App() {
             <Route path='/Wypozyczenia' element={<Wypozyczenia />}/>
             <Route path='/TabelaWypozyczenia' element={<TabelaWypozyczenia/>}/>
             <Route path='/TabelaKlienci' element={<TabelaKlienci/>}/>
-            <Route path='/Wypozyczenia2' element={<Wypozyczenia2/>}/>
           </Routes>
           </Router>
       </div>

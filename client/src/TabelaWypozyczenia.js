@@ -1,16 +1,23 @@
 import React, {useState, useEffect} from 'react';
 import logo from "../src/logo6969.png";
-import { useNavigate} from "react-router-dom";
 import './App.css';
 import Axios from "axios";
 
 function TabelaWypozyczenia() {
-
-    const [cena, setCena] = useState('')
-    const [data_wypozyczenia, setData_wypozyczenia] = useState('')
-    const [data_zwrotu, setData_zwrotu] = useState('')
-    const [okres_wypozyczenia, setOkres_wypozyczenia] = useState('')
     const [WypozyczeniaList, setWypozyczeniaList] = useState([])
+    const [noweDni, setNoweDni]=useState('');
+
+    const delteReview = (cen) =>{
+      Axios.delete(`http://localhost:8002/api/delete/${cen}`);
+    };
+
+    const updateReview = (cen) =>{
+      Axios.put("http://localhost:8002/api/update", {
+        cena : cen, 
+        okres_wypozyczenia: noweDni,
+      });
+      setNoweDni("")
+    };
 
     useEffect(() => {
         Axios.get("http://localhost:8002/api/get1").then((response) => {
@@ -19,7 +26,6 @@ function TabelaWypozyczenia() {
     },
     []);
 
-  let navigate = useNavigate();
   return (
     <div className="klient">
         <div className='srodek'>
@@ -51,20 +57,18 @@ function TabelaWypozyczenia() {
             <td>{val.data_zwrotu}</td>
 
             <td>{val.okres_wypozyczenia}</td>
+            <td>  <button onClick={() =>{delteReview(val.cena)}}>Usuń wypożyczenie</button></td>
+            <td><input type="number" onChange={(e)=>{
+              setNoweDni(e.target.value)
+            }}/></td>
+            <td><button onClick={() =>{updateReview(val.cena)
+            }}>Update</button></td>
          </tr>
               
         )
     })}
     </table>
-
-    
     </div>
-    <button className="buttonik" onClick={() => {
-      navigate('/Wypozyczenia2')
-    }} >
-      Edytuj swoje wypożyczenie
-    </button>
-
     </div>
 
   )
